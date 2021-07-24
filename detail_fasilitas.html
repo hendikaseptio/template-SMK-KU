@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="au theme template">
+	<meta name="author" content="Hendika Septio">
+	<meta name="keywords" content="au theme template">
+	<title>Frelix Education</title>
+	<link rel="stylesheet" type="text/css" href="css/theme.css">
+	<link rel="stylesheet" type="text/css" href="css/responsive.css">
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="vendor/material-design-iconic/css/materialdesignicons.min.css">
+	<script src="vendor/jquery-3.4.1.min.js"></script>
+</head>
+<body>
+	<div class="to-up"><i class="mdi mdi-apple-keyboard-control"></i></div>
+	<script type="text/javascript">
+		$(window).on('scroll', function () {
+			var base = 20;
+			if ($(window).scrollTop() > base) {$('.to-up').show('slow');}
+            else {$('.to-up').hide('slow');}
+        })
+    </script>
+    <div class="loader">
+        <span class="spin"></span>
+    </div>
+    <script type="text/javascript">
+        $(window).on('load', function() {
+            $('.loader').delay(1000).slideUp(2000);
+            $('.spin').fadeOut(2000);
+        })
+    </script>
+    <header class="fixed-top">
+    	<div class="container">
+    		<div class="d-flex align-items-center">
+    			<a href="index.html" class="logo"> <i class="mdi mdi-school"></i> Frelix Education </a>
+    			<div class="d-md-block d-lg-none menu-bar"><i class="mdi mdi-menu"></i></div>
+    			  <nav class="menu d-lg-block">
+                    <div class="container">
+                        <div class="menu-item"><a href="index.html" class="menu-link"> Beranda</a></div>
+                        <div class="dropdown  menu-item d-inline-block">
+                            <a class="menu-link dropdown-toggle  active" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Profil</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <a class="dropdown-item" href="sejarah.html">Sejarah Sekolah</a>
+                                <a class="dropdown-item" href="visi_misi.html">Visi Misi</a>
+                                <a class="dropdown-item  active" href="fasilitas.html">Fasilitas</a>
+                                <a class="dropdown-item" href="profil.html">Profil Sekolah</a>
+                            </div>
+                        </div>
+                        <div class="menu-item"><a href="berita.html" class="menu-link"> Berita</a></div>
+                        <div class="menu-item"><a href="kompetensi.html" class="menu-link"> Kompetensi</a></div>
+                        <div class="menu-item"><a href="prestasi.html" class="menu-link"> Prestasi</a></div>
+                        <div class="menu-item"><a href="ekstrakurikuler.html" class="menu-link"> Ekstrakurikuler</a></div>
+                        <div class="menu-item"><a href="Galeri.html" class="menu-link"> Galeri</a></div>
+                        <div class="menu-item  d-none d-sm-none d-md-none d-lg-inline-block">
+                            <div class="header-search-open btn btn-sm bg-yellow">
+                                <i class="mdi mdi-magnify"></i> 
+                                <span></span>
+                            </div>
+                        </div>
+                        <form method="post" action="">
+                            <input type="text" name="cari" placeholder="Cari Sesuatu disini">
+                            <button type="submit"><span class="mdi mdi-magnify"></span></button>
+                        </form>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <form class="header-search"  method="post" action="">
+            <div class="container">
+                <input type="text" placeholder="Ketik dan Tekan Enter untuk menelusuri" name="cari">
+                <span class="search-close"><i class="mdi mdi-close"></i></span>
+            </div>
+        </form>
+    </header>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('.header-search-open').click(function() {
+                $('.header-search').addClass('on');
+            });
+            $('.search-close').click(function() {
+                $('.header-search').removeClass('on');
+            });
+            $('.menu-bar').click(function() {
+                $('nav').toggleClass('on');
+            });
+        });
+    </script>
+    <section class="banner">
+        <div class="container">
+            <div class="p-3 text-white">
+                <h2>Detail Fasilitas</h2>
+                <a href="index.html" class="text-white">Beranda</a> / <span class="text-white">Profil</span> / <a href="fasilitas.html" class="text-white">Fasilitas</a> / <strong class="text-theme">Detail Fasilitas</strong>
+            </div>
+        </div>
+    </section>
+    <section id="detail">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <img src="img/two-test-tubes-954585.jpg" class="img-fluid rounded-lg" alt="...">
+                    <div class="title-section py-3">
+                        <h1>Laboratorium Sains</h1>
+                        <span></span>       
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </div>
+                    <div class="my-3 d-flex items-align-center">
+                        <i class="mr-auto">-Admin</i>
+                        <small>selasa 12/04/2002</small>
+                    </div>
+                    <hr>    
+                    <div class="d-flex">
+                        <strong class="mr-2">Share</strong>
+                        <a href="" class="mx-1 btn btn-sm rounded-circle btn-secondary"><i class="mdi mdi-link-variant"></i></a>
+                        <a href="" class="mx-1 btn btn-sm rounded-circle btn-secondary"><i class="mdi mdi-facebook"></i></a>
+                        <a href="" class="mx-1 btn btn-sm rounded-circle btn-secondary"><i class="mdi mdi-twitter"></i></a>
+                        <a href="" class="mx-1 btn btn-sm rounded-circle btn-secondary"><i class="mdi mdi-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <div class="title-section pb-3">
+                                <h5>BERITA TERBARU</h5>
+                                <span></span>               
+                            </div>
+                            <div class="mb-2">
+                                <div class="d-flex">
+                                    <img src="img/bg/1.jpg" style="max-width:100px;" class="card-img d-inline" alt="...">
+                                    <div class="card-body py-0 px-2">
+                                        <a href="detail.html" class="text-dark d-inline"><h6 class="card-title">Perpustakaan Baru Resmi dibuka</h6></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-2">
+                                <div class="d-flex">
+                                    <img src="img/bg/1.jpg" style="max-width:100px;" class="card-img d-inline" alt="...">
+                                    <div class="card-body py-0 px-2">
+                                        <a href="detail.html" class="text-dark d-inline"><h6 class="card-title">Perpustakaan Baru Resmi dibuka</h6></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-2">
+                                <div class="d-flex">
+                                    <img src="img/bg/1.jpg" style="max-width:100px;" class="card-img d-inline" alt="...">
+                                    <div class="card-body py-0 px-2">
+                                        <a href="detail.html" class="text-dark d-inline"><h6 class="card-title">Perpustakaan Baru Resmi dibuka</h6></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="title-section pb-3">
+                                <h5>BERITA POPULER</h5>
+                                <span></span>               
+                            </div>
+                            <div class="mb-2">
+                                <div class="d-flex">
+                                    <img src="img/bg/1.jpg" style="max-width:100px;" class="card-img d-inline" alt="...">
+                                    <div class="card-body py-0 px-2">
+                                        <a href="detail.html" class="text-dark d-inline"><h6 class="card-title">Perpustakaan Baru Resmi dibuka</h6></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-2">
+                                <div class="d-flex">
+                                    <img src="img/bg/1.jpg" style="max-width:100px;" class="card-img d-inline" alt="...">
+                                    <div class="card-body py-0 px-2">
+                                        <a href="detail.html" class="text-dark d-inline"><h6 class="card-title">Perpustakaan Baru Resmi dibuka</h6></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-2">
+                                <div class="d-flex">
+                                    <img src="img/bg/1.jpg" style="max-width:100px;" class="card-img d-inline" alt="...">
+                                    <div class="card-body py-0 px-2">
+                                        <a href="detail.html" class="text-dark d-inline"><h6 class="card-title">Perpustakaan Baru Resmi dibuka</h6></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+           </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-4">
+                    <div class="title-section py-3">
+                        <h5>MENU</h5>
+                        <span></span>				
+                    </div>
+                    <table width="100%">
+                        <tr>
+                            <td><a href="index.html" class="text-white"><i class="mdi mdi-link-variant"></i> Beranda</a></td>
+                            <td><a href="visi_misi.html" class="text-white"><i class="mdi mdi-link-variant"></i> Visi Misi</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="sejarah.html" class="text-white"><i class="mdi mdi-link-variant"></i> Sejarah Sekolah</a></td>
+                            <td><a href="fasilitas.html" class="text-white"><i class="mdi mdi-link-variant"></i> Fasilitas</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="profil.html" class="text-white"><i class="mdi mdi-link-variant"></i> Profil Sekolah</a></td>
+                            <td><a href="berita.html" class="text-white"><i class="mdi mdi-link-variant"></i> Berita</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="kompetensi.html" class="text-white"><i class="mdi mdi-link-variant"></i> Kompetensi</a></td>
+                            <td><a href="prestasi.html" class="text-white"><i class="mdi mdi-link-variant"></i> Prestasi</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="ekstrakurikuler.html" class="text-white"><i class="mdi mdi-link-variant"></i> Ekstrakurikuler</a></td>
+                            <td><a href="galeri.html" class="text-white"><i class="mdi mdi-link-variant"></i> Galeri</a></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="col-sm-12 col-md-4">
+                    <div class="title-section py-3">
+                        <h5>IKUTI KAMI</h5>
+                        <span></span>				
+                    </div>
+                    <div class="d-inline" style="flex-flow: row wrap;">
+                        <a href="" class="m-1 btn btn-sm rounded-circle btn-theme"><i class="mdi mdi-facebook"></i> </a>
+                        <a href="" class="m-1 btn btn-sm rounded-circle btn-theme"><i class="mdi mdi-twitter"></i></a>
+                        <a href="" class="m-1 btn btn-sm rounded-circle btn-theme"><i class="mdi mdi-youtube-play"></i> </a>
+                        <a href="" class="m-1 btn btn-sm rounded-circle btn-theme"><i class="mdi mdi-instagram"></i> </a>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4">
+                    <div class="title-section py-3">
+                        <h5>FRELIX EDUCATION</h5>
+                        <span></span>				
+                    </div>
+                    <p>Copyright &copy; Frelix Education 2020 | template created by Hendika</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+<script type="text/javascript">
+    $('.to-up').on('click',function(event) {
+        $('html, body').animate({
+            scrollTop:$('body').offset().top
+        },800);
+    });
+</script>
+<script type="text/javascript" src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+</html>
